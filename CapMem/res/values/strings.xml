@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Memorizacao</string>
+    <string name="action_settings">Configurações</string>
+    <string name="progresso">Progresso</string>
+    <string name="parabens">Parabéns!</string>
+    <string name="voce_tem">Você tem uma boa memória!</string>
+</resources>
