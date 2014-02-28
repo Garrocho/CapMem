@@ -73,4 +73,10 @@ public class CapMem extends Activity {
 		
 		vetorSequencias = gerarSequencia();
 	}
+	
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		getMenuInflater().inflate(R.menu.atividade_inicial, menu);
+		return true;
+	}
 }
