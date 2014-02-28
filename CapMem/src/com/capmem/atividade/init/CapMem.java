@@ -74,6 +74,27 @@ public class CapMem extends Activity {
 		vetorSequencias = gerarSequencia();
 	}
 	
+	public int[] gerarSequencia() {
+		int valor;  
+		int vetor[] = new int[6];  
+		boolean Salvar = false;  
+
+		for (int i = 0; i < 6 ; i++){  
+			valor = 1 + (int) (Math.random()*6);   
+			Salvar = true ;  
+			for (int y=0;y<=i;y++ ){  
+				if (vetor[y] == valor){  
+					Salvar = false;  
+					i--;  
+				}  
+			}   
+			if (Salvar){                            
+				vetor[i] = valor;
+			}                                               
+		}
+		return vetor;
+	}
+	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		getMenuInflater().inflate(R.menu.atividade_inicial, menu);
