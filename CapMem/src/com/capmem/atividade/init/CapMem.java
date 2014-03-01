@@ -119,6 +119,15 @@ public class CapMem extends Activity {
 		background.setBackgroundColor(Color.WHITE);
 	}
 	
+	public void restauraComponente(View componente) {
+		componente.setEnabled(true);
+		Animation fadeIn = new AlphaAnimation(0, 1);
+	    fadeIn.setInterpolator(new DecelerateInterpolator());
+	    fadeIn.setDuration(1500);
+	    componente.setAnimation(fadeIn);
+		componente.setVisibility(View.VISIBLE);
+	}
+	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		getMenuInflater().inflate(R.menu.atividade_inicial, menu);
