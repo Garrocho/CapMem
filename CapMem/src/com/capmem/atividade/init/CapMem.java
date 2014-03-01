@@ -128,6 +128,23 @@ public class CapMem extends Activity {
 		componente.setVisibility(View.VISIBLE);
 	}
 	
+	public void animaComponente(View componente) {
+		componente.setEnabled(false);
+		Animation fadeOut = new AlphaAnimation(1, 0);
+	    fadeOut.setInterpolator(new AccelerateInterpolator());
+	    fadeOut.setDuration(1000);
+	    componente.setAnimation(fadeOut);
+		progresso += 17;
+		barraProgresso.setProgress(progresso);
+		componente.setVisibility(View.GONE);
+		if (contador == vetorSequencias.length) {
+			rotuloParabens.setVisibility(View.VISIBLE);
+			rotuloVoceTem.setVisibility(View.VISIBLE);
+			barraProgresso.setVisibility(View.GONE);
+			rotuloProgresso.setVisibility(View.GONE);
+		}
+	}
+	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		getMenuInflater().inflate(R.menu.atividade_inicial, menu);
