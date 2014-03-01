@@ -95,6 +95,30 @@ public class CapMem extends Activity {
 		return vetor;
 	}
 	
+	public void reiniciar(View componente) {
+		if (componente != null) {
+			vetorSequencias = gerarSequencia();
+			barraProgresso.setVisibility(View.VISIBLE);
+			rotuloProgresso.setVisibility(View.VISIBLE);
+			rotuloParabens.setVisibility(View.GONE);
+			rotuloVoceTem.setVisibility(View.GONE);
+		}
+		RotateAnimation anim = new RotateAnimation(0, 360, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
+		anim.setInterpolator(new LinearInterpolator());
+		anim.setDuration(500);
+		reiniciar.startAnimation(anim);
+		restauraComponente(um);
+		restauraComponente(dois);
+		restauraComponente(tres);
+		restauraComponente(quatro);
+		restauraComponente(cinco);
+		restauraComponente(seis);
+		progresso = 0;
+		contador = 0;
+		barraProgresso.setProgress(progresso);
+		background.setBackgroundColor(Color.WHITE);
+	}
+	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		getMenuInflater().inflate(R.menu.atividade_inicial, menu);
