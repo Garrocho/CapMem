@@ -145,6 +145,15 @@ public class CapMem extends Activity {
 		}
 	}
 	
+	public boolean valida(int numero) {
+		if (numero == vetorSequencias[contador]) {
+			contador++;
+			return true;
+		}
+		reiniciar(null);
+		return false;
+	}
+	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		getMenuInflater().inflate(R.menu.atividade_inicial, menu);
