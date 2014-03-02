@@ -182,6 +182,13 @@ public class CapMem extends Activity {
 		}
 	}
 	
+	public void cinco(View componente) {
+		if (valida(5)) {
+			animaComponente(componente);
+			background.setBackgroundColor(Color.GRAY);
+		}
+	}
+	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		getMenuInflater().inflate(R.menu.atividade_inicial, menu);
