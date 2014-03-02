@@ -34,7 +34,6 @@ public class CapMem extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.atividade_inicial);
 		
-		//Log.d("path", );
 		MediaPlayer mediaPlayer = new  MediaPlayer();
 		try {
 			mediaPlayer.setDataSource("file://com.memorizacao/assets/musicas/bemvindo.mp3");
@@ -42,7 +41,6 @@ public class CapMem extends Activity {
 			mediaPlayer.setVolume(1.0f, 1.0f);
 			mediaPlayer.start();  
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
