@@ -73,7 +73,7 @@ public class CapMem extends Activity {
 		
 		vetorSequencias = gerarSequencia();
 	}
-	
+
 	public int[] gerarSequencia() {
 		int valor;  
 		int vetor[] = new int[6];  
@@ -94,7 +94,7 @@ public class CapMem extends Activity {
 		}
 		return vetor;
 	}
-	
+
 	public void reiniciar(View componente) {
 		if (componente != null) {
 			vetorSequencias = gerarSequencia();
@@ -153,49 +153,49 @@ public class CapMem extends Activity {
 		reiniciar(null);
 		return false;
 	}
-	
+
 	public void um(View componente) {
 		if (valida(1)) {
 			animaComponente(componente);
 			background.setBackgroundColor(Color.BLUE);
 		}
 	}
-	
+
 	public void dois(View componente) {
 		if (valida(2)) {
 			animaComponente(componente);
 			background.setBackgroundColor(Color.RED);
 		}
 	}
-	
+
 	public void tres(View componente) {
 		if (valida(3)) {
 			animaComponente(componente);
 			background.setBackgroundColor(Color.GREEN);
 		}
 	}
-	
+
 	public void quatro(View componente) {
 		if (valida(4)) {
 			animaComponente(componente);
 			background.setBackgroundColor(Color.YELLOW);
 		}
 	}
-	
+
 	public void cinco(View componente) {
 		if (valida(5)) {
 			animaComponente(componente);
 			background.setBackgroundColor(Color.GRAY);
 		}
 	}
-	
+
 	public void seis(View componente) {
 		if (valida(6)) {
 			animaComponente(componente);
 			background.setBackgroundColor(Color.DKGRAY);
 		}
 	}
-	
+
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		getMenuInflater().inflate(R.menu.atividade_inicial, menu);
