@@ -2,6 +2,9 @@
 *.apk
 *.ap_
 
+# temporary files gedit
+*~
+
 # files for the dex VM
 *.dex
 
