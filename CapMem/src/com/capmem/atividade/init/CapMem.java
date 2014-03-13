@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.graphics.Color;
 import android.graphics.PorterDuff.Mode;
 import android.graphics.PorterDuffColorFilter;
-import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -33,16 +32,6 @@ public class CapMem extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.atividade_inicial);
-		
-		/*MediaPlayer mediaPlayer = new  MediaPlayer();
-		try {
-			mediaPlayer.setDataSource("file://com.memorizacao/assets/musicas/bemvindo.mp3");
-			mediaPlayer.prepare();
-			mediaPlayer.setVolume(1.0f, 1.0f);
-			mediaPlayer.start();  
-		} catch (Exception e) {
-			e.printStackTrace();
-		}*/
 		
 		reiniciar = (ImageView)findViewById(R.id.atividade_inicial_imagem_reiniciar);
 
