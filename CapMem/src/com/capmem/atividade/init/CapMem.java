@@ -5,7 +5,6 @@ import android.graphics.Color;
 import android.graphics.PorterDuff.Mode;
 import android.graphics.PorterDuffColorFilter;
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.View;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.AlphaAnimation;
@@ -181,11 +180,5 @@ public class CapMem extends Activity {
 			animaComponente(componente);
 			background.setBackgroundColor(Color.DKGRAY);
 		}
-	}
-
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		getMenuInflater().inflate(R.menu.atividade_inicial, menu);
-		return true;
 	}
 }
