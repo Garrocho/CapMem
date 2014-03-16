@@ -13,11 +13,4 @@ public class AtividadeSobre extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.atividade_sobre);
 	}
-
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		getMenuInflater().inflate(R.menu.atividade_sobre, menu);
-		return true;
-	}
-
 }
